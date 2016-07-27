@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg');
+    background-size: cover;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+.wrapper__title {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+.wrap__title p {
+    color: chartreuse;
+    font: 32px Arial, sans-serif;
+    line-height: 40px;
+}
+.form__wrap {
+    width: 100%;
+    background: rgba(0, 60, 110, 0.7);
+    border: 1px solid #0065b3;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+.form__page {
+    display: inline-block;
+    margin-left: 50px;
+    float: left;
+}
+.form__page p {
+    color: #888888;
+    font-size: 18px;
+    display: inline-block;
+}
+.number__list {
+    color: #888888;
+    font-size: 18px;
+    display: inline-block;
+}
+.list li a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.list li a span {
+    padding: 3px 10px;
+
+}
