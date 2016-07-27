@@ -50,12 +50,27 @@ a {
     font-size: 18px;
     display: inline-block;
 }
+.list {
+    padding: 0;
+}
+.list li {
+    padding-bottom: 12px;
+}
 .list li a {
     color: #ffffff;
     text-decoration: none;
     margin-left: 10px;
 }
 .list li a span {
-    padding: 3px 10px;
+    margin-right: 40px;
+    border-bottom: 1px dashed #ffffff;
 
 }
+.range__block {
+    width: 30%;
+    float: right;
+    margin: 40px 20px 50px 30px;
+}
+
+
+
