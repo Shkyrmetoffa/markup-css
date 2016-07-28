@@ -13,27 +13,39 @@
 
 <div class="wrapper">
     <div class="container">
-        <div class="wrap__title">
-            <p>Если бы на прошлой неделе вы <br> инвестировали в ПАММ-счет успешного <br> управляющего</p>
-        </div>
+        <h1 class="h1">Если бы на прошлой неделе вы <br> инвестировали в ПАММ-счет успешного <br> управляющего</h1>
 
-        <div class="form__wrap">
-            <div class="form__page">
-
-                <div class="number__list">
-                    <p>№ счета</p>
-                    <p>Управляющий</p>
-                </div>
-
-            <ul class="list">
-                    <li><a id="11970" onclick="addClass(this)" href="#"><span>11970</span>Galax</a></li>
-                    <li><a id="7348" onclick="addClass(this)" href="#"><span>7348</span>Veronica</a></li>
-                    <li><a id="10555" onclick="addClass(this)" href="#"><span>10555</span>Dragonfly</a></li>
-                    <li><a id="10504" onclick="addClass(this)" href="#"><span>10504</span>Condor</a></li>
-                    <li><a id="10469" onclick="addClass(this)" href="#"><span>10469</span>Shark_007</a></li>
-                </ul>
+        <div class="calc">
+            <div class="calc__stats">
+				<table>
+					<tr>
+						<th>№ счета</th>
+						<th>Управляющий</th>
+					</tr>
+					<tr>
+						<td><span><i>11970</i></span></td>
+						<td><em>Galax</em></td>
+					</tr>
+					<tr>
+						<td><span><i>7348</i></span></td>
+						<td><em>Veronica</em></td>
+					</tr>
+					<tr>
+						<td><span><i>10555</i></span></td>
+						<td><em>Dragonfly</em></td>
+					</tr>
+					<tr>
+						<td><span><i>10504</i></span></td>
+						<td><em>Condor</em></td>
+					</tr>
+					<tr>
+						<td><span><i>10469</i></span></td>
+						<td><em>Shark_007</em></td>
+					</tr>
+				</table>
+            
             </div>
-            <div class="range__block">
+            <div class="calc__range">
                 <div>
                     <input type="range" min="100 $" max="3000 $">
                 </div>
@@ -41,18 +53,22 @@
                     <div class="day_info">
                         Сегодня ваш депозит бы <br> составил
                     </div>
-
-                </div>
-                <div class="year-sum">
-                    <div id="day_result">
+					<div id="day_result">
                         1 265 $
                     </div>
-
                 </div>
-        </div>
-
+                <div class="year-sum">
+                    <div class="year_info">
+                        За год, при повторении вклада <br> заработали б 
+                    </div>
+					<div id="year_result">
+                        27 432 $
+                    </div>
+                </div>
+        	</div>
+    	</div>
     </div>
 </div>
-
+<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

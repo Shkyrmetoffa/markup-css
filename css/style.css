@@ -4,8 +4,10 @@ html, body {
 body{
     margin: 0;
     padding: 0;
-    background: url('../images/background.jpg');
+    background: url('../images/bg.png') no-repeat 50% 50%;
     background-size: cover;
+    background-position-y: -380px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 ul {
     list-style: none;
@@ -13,6 +15,151 @@ ul {
 a {
     text-decoration: none;
 }
+.wrapper{
+    width: 80%;
+    margin: 115px auto 182px;
+    overflow: hidden;
+}
+.h1{
+    margin: 20px 0;
+    color: #99ca3d;
+    font-size: 22px;
+    line-height: 33px;
+}
+.calc{
+    background: rgba(0,32,62,.45);
+    border:1px solid rgba(0,133,232,.45);
+    border-radius: 11px;
+    position:relative;
+    overflow: hidden;
+}
+.calc:before{
+    content:"";
+    position: absolute;
+    left: 180px;
+    top:0;
+    bottom:0;
+    width: 65px;
+    background: url(../images/arrow.png) no-repeat;
+    background-size: 100% 100%;
+}
+.calc__stats{
+    float: left;
+    width: 160px;
+    padding: 20px;
+}
+.calc__stats table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.calc__stats th{
+    color: #868e95;
+    font-style: italic;
+    font-size: 11px;
+    text-align: center;
+    padding: 10px 0;
+}
+.calc__stats td{
+    color: #FFF;
+    padding: 5px 0;
+    font-size: 12px;
+}
+.calc__stats td span{
+    display: block;
+    padding: 5px 10px;
+}
+.calc__stats td em{
+    float: left;
+    padding: 5px 10px;
+    font-style: normal;
+}
+.calc__stats i{
+    font-style: normal;
+    border-bottom:1px dashed #fff;
+}
+.calc__stats .current,
+.calc__stats tr:hover{
+    cursor:pointer;
+}
+.calc__stats .current span,
+.calc__stats tr:hover span{
+    background:#66ccff;
+    color: #19323f;
+    border-radius:4px 0 0 4px;
+}
+.calc__stats .current i,
+.calc__stats tr:hover i{
+    border:none;
+}
+.calc__stats .current em,
+.calc__stats tr:hover em{
+    background:#66ccff;
+    color: #19323f;
+    border-radius:0 4px 4px 0;
+}
+.calc__range {
+    width: 70%;
+    margin-top: 40px;
+    margin-right: 25px;
+    float: right;
+    padding-bottom: 38px;
+}
+.calc__range input {
+    width: 344px;
+    border-radius: 2px 2px;
+}
+.day-sum,
+.year-sum {
+    padding-top: 23px;
+}
+.day_info,
+#day_result,
+.year_info,
+#year_result {
+    display: inline-block;
+}
+
+.day_info,
+.year_info {
+    color: #5cb5e6;
+    font-size: 14px;
+    font-family: Arial;
+    font-style: italic;
+    line-height: 24px;
+    width: 40%;
+    padding-right: 80px;
+}
+.year_info {
+    margin-top: 10px;
+}
+#day_result,
+#year_result {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 800;
+}
+
+input[type="range"] {
+    min-width: 500px;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    height: 7px;
+    border: 1px solid #bdc3c7;
+    background-color: #bdc3c7;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: blue;
+    border: 4px solid #ddd;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type="range" i]::-webkit-slider-runnable-track {
+     cursor: pointer;
+}
+/*
 .container {
     width: 50%;
     margin: 0 auto;
@@ -74,3 +221,4 @@ a {
 
 
 
+*/
